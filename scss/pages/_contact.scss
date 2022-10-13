@@ -1,0 +1,124 @@
+
+
+.find-us {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    &-titulo-1 {
+      width: 350px;
+      margin: 10px;
+      height: 40px;
+    }
+    &-titulo-2 {
+      width: 350px;
+      margin: 10px;
+    }
+    &-2 {
+      display: flex;
+      flex-wrap: wrap;
+      font-size: 25px;
+      color: white;
+      gap: 100px;
+      margin: 30px;
+      &-mapa {
+        margin-top: 50px;
+        width: 350px;
+      }
+      &-p {
+        margin-top: 0;
+        width: 350px;
+        height: 100%;
+      }
+    }
+  }
+  
+  .form {
+    margin-top: 50px;
+    &_1 {
+      width: 204px;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center;
+      gap: 5px;
+      border: solid 4px black;
+    }
+    &_2 {
+      width: 290px;
+      height: 94px;
+      display: flex;
+      margin: 5px;
+      border: solid 2px black;
+      &_boton_contact {
+        align-self: center;
+        margin: 2px;
+      }
+    }
+  }
+  
+  @media only screen and (min-width: 999px) {
+  
+    .find-us {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center;
+      &-titulo-1 {
+        width: 475px;
+        margin: 10px;
+        height: 52px;
+      }
+      &-titulo-2 {
+        width: 475px;
+        margin: 10px;
+      }
+      &-2 {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 25px;
+        color: white;
+        gap: 100px;
+        margin: 30px;
+        &-mapa {
+          width: 500px;
+          height: 500px;
+        }
+        &-p {
+          margin-top: 35px;
+          width: 400px;
+          height: 100%;
+          font-size: 24px;
+        }
+      }
+    }
+    .form_1 :hover {
+      border: solid 2px skyblue;
+    }
+    .form_2 :hover {
+      border: solid 2px skyblue;
+    }
+    .form {
+      margin-top: 50px;
+      &_1 {
+        width: 204px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+        border: solid 4px black;
+      }
+      &_2 {
+        width: 290px;
+        height: 94px;
+        display: flex;
+        margin: 5px;
+        border: solid 2px black;
+        &_boton_contact {
+          align-self: center;
+          margin: 2px;
+        }
+      }
+    }
+  }

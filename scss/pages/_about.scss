@@ -1,0 +1,79 @@
+
+
+
+.body_black {
+    background-image: none;
+    background-color: black;
+    color: white;
+  }
+  .about-1 {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &-img1 {
+      max-width: 300px;
+    }
+    &-p {
+      padding-top: 10px;
+      margin: 10px;
+      font-size: 20px;
+      text-align: center;
+      width: 90%;
+      height: 500px;
+      background-image: url(../img/restaurant-5521372_1920-1.jpg);
+    }
+    &-boton {
+      display: none;
+    }
+  }
+  .about-2 {
+    display: none;
+  }
+  @media only screen and (min-width: 999px){
+    .about {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 200px;
+      font-size: 30px;
+      margin-top: 20px;
+      &-1 {
+        display: flex;
+        flex-direction: column;
+        color: white;
+        margin-left: 20px;
+        width: 447px;
+        &-img1 {
+          max-width: 447px;
+          height: 52px;
+        }
+        &-p {
+          padding: 0;
+          margin-top: 30px;
+          font-size: 25px;
+          width: 500px;
+          text-align: start;
+          color: white;
+          background-image: none;
+        }
+        &-boton {
+          margin-top: 60px;
+          border: solid 2px rgba(242, 201, 76, 1);
+          padding: 0;
+          width: 100px;
+          font-size: 20px;
+          padding: 5px;
+          text-align: center;
+          align-self: flex-end;
+          color: rgba(242, 201, 76, 1);
+          text-decoration: none;
+          display: block;
+        }
+      }
+      &-2 {
+        display: block;
+        width: 515px;
+        height: 775px;
+      }
+    }
+  }

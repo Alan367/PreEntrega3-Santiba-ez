@@ -1,0 +1,191 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(39, 39, 39, 0.1) 0.01%,
+        rgba(0, 0, 0, 0.13) 13.02%,
+        #000000 100%
+      ),
+      url(../img/fondo-madera.jpg);
+    }
+  .header_index {
+    width: 100%;
+  }
+  .navbar {
+    width: 100%;
+    &-collapse {
+      &-nav {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        font-size: 30px;
+        text-align: center;
+        margin-top: auto;
+        display: flex;
+        gap: 2rem;
+        padding-right: 2rem;
+        &-link {
+          color: white;
+          text-decoration: none;
+          list-style: none;
+        }
+        &-titulo {
+          margin-top: auto;
+          &-img {
+            max-width: 350px;
+            max-height: 67px;
+          }
+        }
+        &-footer {
+          width: 100%;
+          margin-top: auto;
+          display: flex;
+          flex-wrap: wrap;
+          justify-self: end;
+          justify-content: center;
+          &-img {
+            width: 80%;
+          }
+        }
+      }
+    }
+  }
+  .collapse{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 92vh;}
+  
+    .logo{
+    animation: logo ease-in-out 5s;
+     @keyframes logo {
+      0% {
+          transform: translate(0,-20px);
+          opacity: 0;
+      }
+      20% {
+          transform: translate(0,-20px);
+          opacity: 1;
+      }
+      30% {
+          transform: translate(0,0);
+          opacity: 1;
+      }
+      90% {
+          transform: translate(0,0);
+          opacity: 1;
+      }
+      100% {
+          transform: translate(0,0);
+          opacity: 1;
+      }  
+  }
+  }
+    .encabezado-contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    &-1 {
+      width: 350px;
+      text-align: center;
+      &-titulo {
+        max-width: 350px;
+        max-height: 67px;
+      }
+      &-linea {
+        width: 345px;
+        background-color: rgba(242, 201, 76, 1);
+        height: 9px;
+        margin-top: 10px;
+      }
+      &-texto {
+        color: white;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 40px;
+        width: 346px;
+        letter-spacing: 0.09em;
+        margin-top: 5px;
+      }
+    }
+  }
+  .footer {
+    width: 100%;
+    margin-top: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-self: end;
+    justify-content: center;
+    &-img {
+      width: 80%;
+    }
+  }
+  @media only screen and (min-width: 999px){
+    .navbar {
+      width: 100%;
+      &-brand {
+        padding-left: 2rem;
+      }
+      &-collapse {
+        
+        &-nav {
+          display: flex;
+          flex-direction: row;
+          font-size: 20px;
+          margin: 0;
+          &-titulo {
+            display: none;
+          }
+          &-footer {
+            display: none;
+            margin: 0;
+          }
+        }
+    }
+  }
+  .encabezado-contenedor-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 10%;
+    &-titulo {
+      max-width: 50%;
+      max-height: 67px;
+    }
+    &-linea {
+      background-color: rgba(242, 201, 76, 1);
+      width: 460px;
+      height: 9px;
+      margin-top: 10px;
+    }
+    &-texto {
+      color: white;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 40px;
+      width: 70%;
+      letter-spacing: 0.09em;
+      margin-top: 10px;
+      text-align: center;
+    }
+  }
+  .footer-img {
+    width: 800px;
+  }
+  .collapse{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    min-height: 60px;
+  }
+  }
